@@ -1,0 +1,178 @@
+@import "_variables";
+@import "_mainboxmixins";
+
+body {
+    font-family:    $body-font-family;
+    font-size:      $body-font-size;
+    line-height:    2em;
+    background:    #{$body-bkgrd} $white repeat-x;
+    @include indent(0,0);
+     }
+
+main{
+    @include size-width-only(4px + (30px * 3) * 10 ); //math operation
+  //  @include size-width-only (940px);           
+    @include indent(0 auto,0 10px);
+}
+
+/* FIGURE */
+figure {
+    @include size();
+    background:url('../images/logo.png') no-repeat 0 50px;
+    @include indent(0);
+    @include position-with-float();
+    display:block; }
+
+/* NAVIGATION */
+nav {
+    @include size(540px,190px);
+    text-align:right;
+    @include position-with-float(left);
+ ul {
+     list-style-type:none;
+     @include indent(95px 0 0 0);
+ li {
+     display:inline;
+    font-size:$navlist-fontsize;
+    @include indent(0 10px 0 0);
+ a  {
+     color: $salmon ;
+     text-decoration:none;
+     letter-spacing:-0.01em;
+    & :hover{
+     color:$white;} } } } }
+
+
+
+/* HEADER */
+header {
+    text-align:center;
+    @include size-width-only(inherit);
+    @include indent(0,40px 0 0 0);
+    @include position(none,both);
+img {
+    max-width:100%;height:auto;}
+ h1 {
+     color:$salmon;font-weight:$h1-fontweight;font-size:$h1-fontsize;line-height:0;}
+ h2 {
+     color:$white;font-weight:$h2-fontweight;font-size:$h2-fontsize;line-height:0;margin-bottom:70px;}
+ h3 {
+     color:$lightgrey;font-weight:$h3-fontweight;font-size:$h3-fontsize;line-height:0;margin-bottom:50px;} }
+
+/* CONTENT */
+#headline {
+    background:$salmon;
+    text-align:center;
+    @include size(100%,130px);
+    @include indent(0 auto, 0);
+h1 {
+    color:$white;font-size:$h1-fontsize;font-weight: $h1-fontweight;} }
+#content {
+    @include size-width-only(940px);
+    @include indent(20px auto, 0);
+    h3 {
+        color:$lightgrey;
+        font-size:$h3-fontsize;
+        font-weight:$h3-fontweight;}
+#products {
+    @include size-width-only(460px);
+    @include position(left,none);
+    
+img {float:left;
+    margin-right:20px;}
+
+article{
+    @include indent(0 0 40px 0,0);}
+h4{
+    line-height:1em;} }
+#testimonials{
+    @include size-width-only(460px);
+    @include position(right,none);} }
+
+/* FOOTER */
+.greybar {
+    background:$pearlwhite;
+    @include size(100%,90px);
+    @include indent(0,30px 0 0 0);
+    @include position(none,both);}
+footer  {
+    background:$darkgrey;
+    text-align:center;
+    color:$white;
+    @include size(100%,120px);
+    @include indent(0,50px 0 0 0);}
+.social-media  {
+    @include size-width-only(165px);
+    @include indent(0 auto,0);
+ div {
+     float:left;margin-right:5px;
+ a {display:block;width:36px;height:36px;text-indent:-9999px;}
+.one {background: $footer-img 0 0;}
+.two  {background: $footer-img -38px 0;}
+.three {background: $footer-img -76px 0;}
+.four  {background: $footer-img -114px 0;} }}
+
+@media screen and (max-width:959px) {
+main {
+    @include size-width-only(768px);}
+figure{
+    @include size(inherit,140px);
+    @include position(none,none);
+    background-position:center;}
+nav {
+    @include size(inherit,50px);
+    @include position(none,none);
+    text-align:center;
+ul {
+    @include indent(0,0);
+    li	{
+        font-size:1em;
+        @include indent(0 10px,0);} } }
+header h1 {font-size:3em;}
+header h2 {font-size:1.5em;}
+#content {
+    @include size-width-only(inherit);
+#products{
+#testimonials{
+    @include size-width-only(46%);
+    @include indent(0 2%,0);
+     } } }
+     @include large();  
+}
+@media screen and (max-width:767px) {
+    main                        {@include size-width-only(460px);}    
+    nav ul li                   {font-size:0.8em; @include size-width-only(0 5px);}
+    header h1					{font-size:2em;}
+    header h2 					{font-size:1em;}
+    header img			 		{@include indent(0 0 100px 0,0);}
+    header h3					{font-size:1.5em;}
+    #headline h1 				{font-size:2em; @include indent(0,50px 0 0 0);}
+    #content {
+    #products{
+    #testimonials{              @include size-width-only(96%);
+                                @include indent(0 2%,0);
+                                @include position(none,none);
+                                } } }
+         @include medium();                  
+}
+
+@media screen and (max-width:459px) {
+    main 						{@include size-width-only(300px);}
+    figure						{background-size:contain; @include size($height:100px);}
+    nav							{@include indent(0 0 40px 0,0);}
+    select              		{@include size-width-only(95%);}
+    #headline h1 				{font-size:1.5em;@include indent(0,30px 0 0 0);}
+    header {
+        img	{@include indent(0 0 80px 0,0);}
+    h1:first-child		{font-size:1.4em;@include indent(0 0 20px 0,0);}
+    h2					{font-size:1.4em;}
+    h3					{color:$white;font-size:1em;} }
+    #content h3					{font-size:1.6em;}
+    .greybar, article img		{display:none;}
+    footer	{text-align:center;
+        p{ 
+    img{
+        @include indent(0,0);
+        @include position(none,none);} } }
+        @include small();  
+}

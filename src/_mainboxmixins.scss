@@ -1,0 +1,45 @@
+@mixin size($width:440px, $height:190px){
+    width:$width;
+    height:$height;
+}
+
+@mixin size-width-only($width:440px){
+    width:$width;
+}
+
+@mixin indent($margin:null, $padding:null){
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin position($float:left,$clear:none){
+    float: $float;
+    clear: $clear;
+}
+
+@mixin position-with-float($float:left){
+    float: $float;
+}
+
+@mixin large{
+    @media (max-width:959px){
+        @content;
+    }
+}
+
+@mixin medium{
+    @media (max-width:767px){
+        @content;
+    }
+}
+@mixin small{
+    @media (max-width:459px){
+        @content;
+    }
+}
+
+
+
+
+
+
