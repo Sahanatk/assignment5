@@ -6,20 +6,31 @@ body {
   font-size: 1em;
   line-height: 2em;
   background: url("../images/bg.gif") #FFF repeat-x;
-  margin: 0;
-  padding: 0; }
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
 
 main {
-  width: 904px;
-  margin: 0 auto;
-  padding: 0 10px; }
+  width: 940px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding-top: 0;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left: 10px; }
 
 /* FIGURE */
 figure {
-  width: 440px;
+  width: 400px;
   height: 190px;
   background: url("../images/logo.png") no-repeat 0 50px;
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
   float: left;
   display: block; }
 
@@ -31,11 +42,17 @@ nav {
   float: left; }
   nav ul {
     list-style-type: none;
-    margin: 95px 0 0 0; }
+    margin-top: 95px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0; }
     nav ul li {
       display: inline;
       font-size: 0.8em;
-      margin: 0 10px 0 0; }
+      margin-top: 0;
+      margin-right: 10px;
+      margin-bottom: 0;
+      margin-left: 0; }
       nav ul li a {
         color: #E65C43;
         text-decoration: none;
@@ -47,9 +64,10 @@ nav {
 header {
   text-align: center;
   width: inherit;
-  margin: 0;
-  padding: 40px 0 0 0;
-  float: none;
+  padding-top: 40px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
   clear: both; }
   header img {
     max-width: 100%;
@@ -64,13 +82,19 @@ header {
     font-weight: 900;
     font-size: 2.5em;
     line-height: 0;
-    margin-bottom: 70px; }
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 70px;
+    margin-left: 0; }
   header h3 {
     color: #666;
     font-weight: 400;
     font-size: 2em;
     line-height: 0;
-    margin-bottom: 50px; }
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
+    margin-left: 0; }
 
 /* CONTENT */
 #headline {
@@ -78,46 +102,58 @@ header {
   text-align: center;
   width: 100%;
   height: 130px;
-  margin: 0 auto;
-  padding: 0; }
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto; }
   #headline h1 {
     color: #FFF;
     font-size: 4em;
-    font-weight: 100; }
+    font-weight: 100;
+    padding-top: 50px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0; }
 
 #content {
   width: 940px;
-  margin: 20px auto;
-  padding: 0; }
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto; }
   #content h3 {
     color: #666;
     font-size: 2em;
     font-weight: 400; }
   #content #products {
     width: 460px;
-    float: left;
-    clear: none; }
+    float: left; }
     #content #products img {
       float: left;
-      margin-right: 20px; }
+      margin-top: 0;
+      margin-right: 20px;
+      margin-bottom: 0;
+      margin-left: 0; }
     #content #products article {
-      margin: 0 0 40px 0;
-      padding: 0; }
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 40px;
+      margin-left: 0; }
     #content #products h4 {
       line-height: 1em; }
   #content #testimonials {
     width: 460px;
-    float: right;
-    clear: none; }
+    float: right; }
 
 /* FOOTER */
 .greybar {
   background: #f5f6f6;
   width: 100%;
   height: 90px;
-  margin: 0;
-  padding: 30px 0 0 0;
-  float: none;
+  padding-top: 30px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
   clear: both; }
 
 footer {
@@ -126,29 +162,42 @@ footer {
   color: #FFF;
   width: 100%;
   height: 120px;
-  margin: 0;
-  padding: 50px 0 0 0; }
+  padding-top: 50px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0; }
 
 .social-media {
   width: 165px;
-  margin: 0 auto;
-  padding: 0; }
-  .social-media div {
-    float: left;
-    margin-right: 5px; }
-    .social-media div a {
-      display: block;
-      width: 36px;
-      height: 36px;
-      text-indent: -9999px; }
-    .social-media div .one {
-      background: url("../images/social-media.png") 0 0; }
-    .social-media div .two {
-      background: url("../images/social-media.png") -38px 0; }
-    .social-media div .three {
-      background: url("../images/social-media.png") -76px 0; }
-    .social-media div .four {
-      background: url("../images/social-media.png") -114px 0; }
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto; }
+
+.social-media div {
+  float: left;
+  margin-top: 0;
+  margin-right: 5px;
+  margin-bottom: 0;
+  margin-left: 0; }
+
+.social-media a {
+  display: block;
+  width: 36px;
+  height: 36px;
+  text-indent: -9999px; }
+
+.social-media div.one {
+  background: url("../images/social-media.png") 0 0; }
+
+.social-media div.two {
+  background: url("../images/social-media.png") -38px 0; }
+
+.social-media div.three {
+  background: url("../images/social-media.png") -76px 0; }
+
+.social-media div.four {
+  background: url("../images/social-media.png") -114px 0; }
 
 @media screen and (max-width: 959px) {
   main {
@@ -157,21 +206,23 @@ footer {
     width: inherit;
     height: 140px;
     float: none;
-    clear: none;
     background-position: center; }
   nav {
     width: inherit;
     height: 50px;
     float: none;
-    clear: none;
     text-align: center; }
     nav ul {
-      margin: 0;
-      padding: 0; }
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0; }
       nav ul li {
         font-size: 1em;
-        margin: 0 10px;
-        padding: 0; }
+        margin-top: 0;
+        margin-right: 10px;
+        margin-bottom: 0;
+        margin-left: 10px; }
   header h1 {
     font-size: 3em; }
   header h2 {
@@ -180,58 +231,75 @@ footer {
     width: inherit; }
     #content #products #testimonials {
       width: 46%;
-      margin: 0 2%;
-      padding: 0; } }
+      margin-top: 0;
+      margin-right: 2%;
+      margin-bottom: 0;
+      margin-left: 2%; } }
 
 @media screen and (max-width: 767px) {
   main {
     width: 460px; }
   nav ul li {
     font-size: 0.8em;
-    width: 0 5px; }
+    margin-top: 0;
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-left: 5px; }
   header h1 {
     font-size: 2em; }
   header h2 {
     font-size: 1em; }
   header img {
-    margin: 0 0 100px 0;
-    padding: 0; }
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 100px;
+    margin-left: 0; }
   header h3 {
     font-size: 1.5em; }
   #headline h1 {
     font-size: 2em;
-    margin: 0;
-    padding: 50px 0 0 0; }
+    padding-top: 50px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0; }
   #content #products #testimonials {
     width: 96%;
-    margin: 0 2%;
-    padding: 0;
-    float: none;
-    clear: none; } }
+    margin-top: 0;
+    margin-right: 2%;
+    margin-bottom: 0;
+    margin-left: 2%;
+    float: none; } }
 
 @media screen and (max-width: 459px) {
   main {
     width: 300px; }
   figure {
     background-size: contain;
-    width: 440px;
     height: 100px; }
   nav {
-    margin: 0 0 40px 0;
-    padding: 0; }
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+    margin-left: 0; }
   select {
     width: 95%; }
   #headline h1 {
     font-size: 1.5em;
-    margin: 0;
-    padding: 30px 0 0 0; }
+    padding-top: 30px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0; }
   header img {
-    margin: 0 0 80px 0;
-    padding: 0; }
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 80px;
+    margin-left: 0; }
   header h1:first-child {
     font-size: 1.4em;
-    margin: 0 0 20px 0;
-    padding: 0; }
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 0; }
   header h2 {
     font-size: 1.4em; }
   header h3 {
@@ -244,7 +312,8 @@ footer {
   footer {
     text-align: center; }
     footer p img {
-      margin: 0;
-      padding: 0;
-      float: none;
-      clear: none; } }
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      float: none; } }

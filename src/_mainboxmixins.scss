@@ -1,4 +1,4 @@
-@mixin size($width:440px, $height:190px){
+@mixin size($width:400px, $height:190px){
     width:$width;
     height:$height;
 }
@@ -7,13 +7,21 @@
     width:$width;
 }
 
-@mixin indent($margin:null, $padding:null){
-    margin: $margin;
-    padding: $padding;
-}
+@mixin padding($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+  }
+  
+  @mixin margin($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+  }
 
-@mixin position($float:left,$clear:none){
-    float: $float;
+@mixin position-with-clear($clear:none){
     clear: $clear;
 }
 
